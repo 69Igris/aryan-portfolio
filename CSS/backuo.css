@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(12, 13, 16);
+    color: white;
+    font-family: 'poppins', sans-serif;
+}
+
+nav {
+    background-color: rgb(33, 35, 43);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 20px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #1eebfd;
+    font-size: 1.01rem;
+}
+
+#logo {
+    margin-top: 5px;
+    margin-right: 670px;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 23px 0;
+}
+
+.firstSection div {
+    width: 35%;
+}
+
+.right2 img {
+    height: 600px;
+    width: 360px;
+    margin: 50px 0;
+    margin-left: 50px;
+    margin-bottom: 0px;
+}
+
+.left2 {
+    margin: 100px;
+    margin-right: 0;
+    margin-top: 180 px;
+    margin-left: 80px;
+    font-size: 30px;
+}
+
+.span {
+    color: #1eebfd;
+}
+
+#typing-animation {
+    color: #1eebfd;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vw;
+}
+
+.secondSection h2 {
+    font-size: 60px;
+}
+
+.about-me-p {
+    display: flex;
+    margin: 40px 0;
+    gap: 4rem;
+    align-items: center;
+    font-size: 18px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1rem;
+    margin: 60px 0;
+}
+
+main hr {
+    border: 0;
+    background: rgb(66 71 89);
+    height: 2.5px;
+    margin: 40px 84px 40px 8px;
+}
+
+.skill-card {
+    background: rgba(44, 246, 199, 0.139);
+    padding: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    color: #1eebfd;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
